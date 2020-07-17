@@ -2,7 +2,8 @@ import React from 'react'
 
 const Preloader = () => {
     return (
-        <div className="preloader-wrapper big active">
+      <div className="container center" style={{marginTop: '10rem'}}>
+                <div className="preloader-wrapper big active">
         <div className="spinner-layer spinner-blue-only">
           <div className="circle-clipper left">
             <div className="circle"></div>
@@ -12,6 +13,7 @@ const Preloader = () => {
             <div className="circle"></div>
           </div>
         </div>
+      </div>
       </div>
     )
 }
