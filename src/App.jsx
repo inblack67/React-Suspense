@@ -1,13 +1,17 @@
 import React, { useEffect, lazy, Suspense } from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// styles
+
+import { Router } from '@reach/router'
+
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import './App.css';
 import LazyPreloader from './components/dumb/LazyPreloader'
+import Preloader from './components/dumb/Preloader'
 
-// Suspense
+// Lazy Imports
 const Nav = lazy(() => import('./components/dumb/Nav'))
+const Home = lazy(() => import('./components/smart/Home'))
+const Calculations = lazy(() => import('./components/smart/Calculations'))
 
 
 function App() {
@@ -21,6 +25,14 @@ function App() {
       <Suspense fallback={<LazyPreloader />}>
         <Nav />
       </Suspense>
+
+      <Suspense fallback={<Preloader />}>
+      <Router>
+          <Home path='/' />
+          <Calculations path='/calculations' />
+      </Router>
+      </Suspense>
+
     </div>
   );
 }

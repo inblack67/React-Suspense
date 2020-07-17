@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from '@reach/router'
 
 const Nav = () => {
     return (
@@ -8,6 +9,14 @@ const Nav = () => {
                     <a href="#!" className="brand-logo">
                         React Suspense
                     </a>
+                    <ul className="right">
+                        <li>
+                            <Link to='/'>Home</Link>
+                        </li>
+                        <li>
+                        <Link to='/calculations'>Calculations</Link>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
