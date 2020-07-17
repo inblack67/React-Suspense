@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { Suspense } from 'react'
+import Fibonacci from './Fibonacci'
+import LazyPreloader from '../dumb/LazyPreloader'
 
 const Calculations = () => {
+
     return (
-        <div>
-            <p className="flow-text center">
-                Calculating...
-            </p>
+        <div className="container center">
+            <Suspense fallback={<LazyPreloader />}>
+                <Fibonacci num={10} />
+            </Suspense>
+            <Suspense fallback={<LazyPreloader />}>
+                <Fibonacci num={20} />
+            </Suspense>
+            <Suspense fallback={<LazyPreloader />}>
+                <Fibonacci num={30} />
+            </Suspense>
         </div>
     )
 }
