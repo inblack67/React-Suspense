@@ -1,5 +1,5 @@
 import React, { useEffect, lazy, Suspense } from 'react';
-
+import Darkmode from 'darkmode-js';
 import { Router } from '@reach/router'
 
 import 'materialize-css/dist/css/materialize.min.css';
@@ -16,8 +16,24 @@ const Calculations = lazy(() => import('./components/smart/Calculations'))
 
 function App() {
 
+  // var options = {
+  //   bottom: '64px', // default: '32px'
+  //   right: 'unset', // default: '32px'
+  //   left: '32px', // default: 'unset'
+  //   time: '0.5s', // default: '0.3s'
+  //   mixColor: '#fff', // default: '#fff'
+  //   backgroundColor: 'black',  // default: '#fff'
+  //   buttonColorDark: 'red',  // default: '#100f2c'
+  //   buttonColorLight: 'white', // default: '#fff'
+  //   saveInCookies: false, // default: true,
+  //   label: '🌓', // default: ''
+  //   autoMatchOsTheme: true // default: true
+  // }
+
   useEffect(() => {
     M.AutoInit();
+    // new Darkmode(options).showWidget();
+    new Darkmode().showWidget();
   },[])
 
   return (
