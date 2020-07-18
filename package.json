@@ -16,6 +16,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "use-custom-fetch-suspense": "^0.1.0",
     "workerpool": "^6.0.0"
   },
   "scripts": {

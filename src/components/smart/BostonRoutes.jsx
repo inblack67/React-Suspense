@@ -1,9 +1,9 @@
 import React from 'react'
-import fetchRoutesSuspense from '../../ajaxCalls/fetchRoutesSuspense'
+import useFetchSuspense from 'use-custom-fetch-suspense'
 
 const BostonRoutes = () => {
 
-    const res = fetchRoutesSuspense(`https://api-v3.mbta.com/routes`);
+    const res = useFetchSuspense(`https://api-v3.mbta.com/routes`);
 
     return (
         <div className='container'>

@@ -1557,6 +1557,18 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
   integrity sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
 
+"@types/lru-cache@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@types/lru-cache/-/lru-cache-5.1.0.tgz#57f228f2b80c046b4a1bd5cac031f81f207f4f03"
+  integrity sha512-RaE0B+14ToE4l6UqdarKPnXwVDuigfFv+5j9Dze/Nqr23yyuqdNvzcZi3xB+3Agvi5R4EOgAksfv3lXX4vBt9w==
+
+"@types/md5@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@types/md5/-/md5-2.2.0.tgz#cd82e16b95973f94bb03dee40c5b6be4a7fb7fb4"
+  integrity sha512-JN8OVL/wiDlCWTPzplsgMPu0uE9Q6blwp68rYsfk2G8aokRUQ8XD9MEhZwihfAiQvoyE+m31m6i3GFXwYWomKQ==
+  dependencies:
+    "@types/node" "*"
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -10346,6 +10358,17 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
+
+use-custom-fetch-suspense@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/use-custom-fetch-suspense/-/use-custom-fetch-suspense-0.1.0.tgz#21fc9eb59d7c3ec37e3845d4fcf0b0e64bd8bed0"
+  integrity sha512-CciSq2ehIE89VBqjSSeSoMVpjcArR6LC38DN4bGH0LK+xErbDk1hGbRzbOPumGZRsXenHMT0MzU8wd6NU9Xgow==
+  dependencies:
+    "@types/lru-cache" "^5.1.0"
+    "@types/md5" "^2.2.0"
+    immer "^7.0.5"
+    lru-cache "^6.0.0"
+    md5 "^2.2.1"
 
 use@^3.1.0:
   version "3.1.1"
