@@ -15,6 +15,9 @@ const Calculations = () => {
             <Suspense fallback={<LazyPreloader />}>
                 <Fibonacci num={30} />
             </Suspense>
+            <Suspense fallback={<LazyPreloader />}>
+                <Fibonacci num={40} />
+            </Suspense>
         </div>
     )
 }

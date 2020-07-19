@@ -1,11 +1,11 @@
 import React from 'react'
-import useWorker from '../../utils/useWorker'
 import { fib } from '../../utils/fibonacci'
 import { memo } from 'react';
+import { useIntensiveFunctionSuspense } from 'use-intensive-function-suspense'
 
 const Fibonacci = ({ num }) => {
 
-    const result = useWorker(fib, [num]);
+    const result = useIntensiveFunctionSuspense(fib, [num]);
 
     return (
         <div>

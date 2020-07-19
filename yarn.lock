@@ -10370,6 +10370,16 @@ use-custom-fetch-suspense@^0.1.0:
     lru-cache "^6.0.0"
     md5 "^2.2.1"
 
+use-intensive-function-suspense@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/use-intensive-function-suspense/-/use-intensive-function-suspense-0.1.0.tgz#1f1979c1fc1f5de2061bffb1891fc84dd00d736c"
+  integrity sha512-0i2DwDY1W/CJMRdCtR7LPk79a7AddbQ1VIRNCEGpFIKFVeTRF0dcu4Al2jbkviwtrj2RI/X/2mZKwB11RLqCDg==
+  dependencies:
+    immer "^7.0.5"
+    lru-cache "^6.0.0"
+    md5 "^2.2.1"
+    workerpool "^6.0.0"
+
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"

@@ -6,7 +6,7 @@ import workerpool from 'workerpool'
 const cache = new lru(50);
 const pool = new workerpool.pool();
 
-export default (func, args) => {
+const useWorker = (func, args) => {
     const key = `${func.name}.${md5(JSON.stringify(args))}`;
 
     const value = cache.get(key) || { status: 'new', data: null }
@@ -28,3 +28,5 @@ export default (func, args) => {
 
     throw promise; // will be caught by suspense
 }
+
+export { pool, useWorker };
